@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Stimulus 101</title>
+    <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="application.css">
+    
+    <script async src="https://ga.jspm.io/npm:es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "@hotwired/stimulus": "https://unpkg.com/@hotwired/stimulus/dist/stimulus.js"
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1 class="page-title">For all candy lovers</h1>
+  <div class="container" data-controller="cards">
+    
+    <div class="panel active" data-cards-target="card" data-action="click->cards#open" style="background-image: linear-gradient(to bottom, rgba(22, 22, 22, 0.1), rgba(66, 60, 65, 0.1)),url('https://images.unsplash.com/photo-1588756264692-d396bca41fb1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGNhbmR5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=60')">
+      <h3>Fruit drops</h3>
+    </div>
+    <div class="panel" data-cards-target="card" data-action="click->cards#open" style="background-image: linear-gradient(to bottom, rgba(22, 22, 22, 0.1), rgba(66, 60, 65, 0.1)),url('https://images.unsplash.com/photo-1582058091505-f87a2e55a40f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FuZHl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=60')">
+      <h3>Gummy Bears</h3>
+    </div>
+    <div class="panel" data-cards-target="card" data-action="click->cards#open" style="background-image: linear-gradient(to bottom, rgba(22, 22, 22, 0.1), rgba(66, 60, 65, 0.1)),url('https://images.unsplash.com/photo-1548848221-0c2e497ed557?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fGNhbmR5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=60')">
+      <h3>Macarons</h3>
+    </div>
+    <div class="panel" data-cards-target="card" data-action="click->cards#open" style="background-image: linear-gradient(to bottom, rgba(22, 22, 22, 0.05), rgba(66, 60, 65, 0.05)),url('https://images.unsplash.com/photo-1532117364815-720cd35ff6e3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FuZHl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=60')">
+      <h3>Lollipops</h3>
+    </div>
+    <div class="panel" data-cards-target="card" data-action="click->cards#open" style="background-image: linear-gradient(to bottom, rgba(22, 22, 22, 0.1), rgba(66, 60, 65, 0.1)),url('https://images.unsplash.com/photo-1581798269145-7512508289b9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Y2FuZHl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=60')">
+      <h3>Jelly Beans</h3>
+    </div>
+    <div class="panel" data-cards-target="card" data-action="click->cards#open" style="background-image: linear-gradient(to bottom, rgba(22, 22, 22, 0.1), rgba(66, 60, 65, 0.1)),url('https://images.unsplash.com/photo-1486427944299-d1955d23e34d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fGNhbmR5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=60')">
+      <h3>Cupcakes</h3>
+    </div>
+  </div>
+    <script src="lib/index.js" type="module"></script>
+  </body>
+</html>
